@@ -1,0 +1,159 @@
+/* Reset do Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+#cabecalho {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cabecalho h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-style: italic;
+    color: #bdc3c7;
+    font-size: 1.1em;
+}
+
+/* Seções */
+h2 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+    margin: 25px 0 15px;
+}
+
+/* Experiência Profissional */
+.experiencia {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.empresa {
+    font-weight: bold;
+    color: #2980b9;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.periodo {
+    color: #7f8c8d;
+    font-style: italic;
+    display: inline-block;
+}
+
+.experiencia ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.experiencia li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.experiencia li:before {
+    content: "▹";
+    position: absolute;
+    left: -20px;
+    color: #3498db;
+}
+
+/* Habilidades e Listas */
+ul {
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.destaque {
+    font-weight: bold;
+    color: #e74c3c;
+    background-color: #fef5f5;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Parágrafos */
+.paragrafo {
+    padding: 15px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 15px 0;
+    line-height: 1.6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Linhas Divisórias */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+/* Contato */
+#contato {
+    background-color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#contato a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #cabecalho {
+        padding: 20px 15px;
+    }
+
+    .experiencia, .paragrafo {
+        padding: 15px;
+    }
+}
