@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --header-height: 8rem;
+    --main-color: #2c3e50;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --light-text: #7f8c8d;
+    --bg-color: #f5f7fa;
+    --card-bg: white;
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 2rem;
+    max-width: 90vw;
+    margin: 0 auto;
+    font-size: 1.6rem; /* 16px */
+}
+
+#cabecalho {
+    background-color: var(--main-color);
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+#cabecalho h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.subtitulo {
+    font-style: italic;
+    color: #bdc3c7;
+    font-size: 1.1em;
+}
+
+h2 {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 0.2rem solid var(--accent-color);
+    margin: 2.5rem 0 1.5rem;
+}
+.experiencia {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 0.4rem solid var(--accent-color);
+    border-radius: 0.4rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+.empresa {
+    font-weight: bold;
+    color: #2980b9;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.periodo {
+    color: var(--light-text);
+    font-style: italic;
+    display: inline-block;
+}
+
+.experiencia ul {
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+}
+
+.experiencia li {
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.experiencia li:before {
+    content: "▹";
+    position: absolute;
+    left: -2rem;
+    color: var(--accent-color);
+}
+
+ul {
+    list-style-type: none;
+    margin: 1.5rem 0;
+}
+
+li {
+    padding: 0.8rem 0;
+    border-bottom: 0.1rem solid #eee;
+}
+
+.destaque {
+    font-weight: bold;
+    color: #e74c3c;
+    background-color: #fef5f5;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.paragrafo {
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    border-radius: 0.4rem;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+hr {
+    border: 0;
+    height: 0.1rem;
+    background-color: #ddd;
+    margin: 3rem 0;
+}
+
+#contato {
+    background-color: #ecf0f1;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    margin-top: 3rem;
+}
+
+#contato a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 56.25%;
+    }
+
+    body {
+        padding: 1rem;
+        max-width: 95vw;
+    }
+
+    #cabecalho {
+        padding: 2rem 1.5rem;
+    }
+
+    .experiencia, .paragrafo {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 50%;
+    }
+
+    #cabecalho h1 {
+        font-size: 2.4rem;
+    }
+}
